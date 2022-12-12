@@ -1,0 +1,166 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    background: #ccc;
+    display: flex;
+    flex-flow: column wrap;
+}
+.head{
+    background: url(./img/Peluditos.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+    .menu{
+        display: flex;
+        background: rgba(200, 200, 200, 0.5);
+        height: 50px;
+        flex-flow: row nowrap;
+        border-bottom: 2px solid #ccc;
+        border: 2px solid #fff;
+    }
+        .logo{
+            /* background: rgb(228, 0, 0); */
+            display: flex;
+            flex: 1 1 auto;
+            justify-content: center;
+            align-items: center;
+        }
+            .logo a{
+                color: #2b2a2a;
+            }
+            .logo a:hover{
+                color: #AbAaAa;
+            }
+        .links{
+            /* background: rgb(0, 166, 0); */
+            display: flex;
+            flex: 4 1 auto;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .links a{
+                margin: 10px;
+                color: #2b2a2a;
+            }
+            .links a:hover{
+                color: #AbAaAa;
+            }
+        .iconos{
+            /* background: rgb(0, 0, 147); */
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .iconos a{
+                color: #2b2a2a;
+            }
+            .iconos a:hover{
+                color: #AbAaAa;
+            }
+    .texto{
+        height: 750px;
+        display: flex;
+        align-items: center;
+        margin: 50px;
+    }
+    .texto h1{
+        text-align: center;
+    }
+.cuerpo{
+    /* background: rgb(162, 230, 171); */
+    display: flex;
+    flex: 1 1 auto;
+}
+    .articulo{
+        /* background: rgb(171, 135, 228); */
+        flex: 1 1 83%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+        .box{
+            background-color: #f2f2f2;
+            margin: 10px;
+            flex: 1 1 40%;
+            display: flex;
+            flex-flow: column;
+        }
+        .box img{
+            background-position: center;
+            background-attachment: contain;
+            background-size: cover;
+        }
+        .tituloBox{
+            margin-top: -33px;
+            font-size: 26px;
+            color: #fff;
+            border: 1 solid #000;
+        }
+        .box p{
+            margin-top: 20px;
+            text-align: center;
+        }
+    .costado{
+        display: flex;
+        flex-flow: column wrap;
+        flex: 1 1 13%;
+    }
+        .publicidad{
+            margin-top: 10px;
+        }
+.pie{
+    background: rgb(243, 167, 205);
+    display: flex;
+    flex-flow: row wrap;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+    .pieDescripcion{
+
+    }
+
+@media all and (max-width: 900px){
+    .cuerpo{
+        flex-flow: column nowrap;
+    }
+    .costado{
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 600px){
+    .cuerpo{
+        flex-flow: column nowrap;
+    }
+    .menu{
+        flex-flow: column nowrap;
+        height: 150px;
+    }
+        .logo{
+            height: 50px;
+        }
+        .links{
+            height: 50px;
+        }
+        .iconos{
+            height: 50px;
+        }
+    .box{
+        flex: 1 1 auto;
+    }
+    .texto{
+        font-size: 12px;
+    }
+}
